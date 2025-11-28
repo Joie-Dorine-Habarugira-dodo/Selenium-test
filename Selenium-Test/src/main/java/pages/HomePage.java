@@ -28,6 +28,16 @@ public class HomePage {
         clickLink("Javascript Alerts");
         return new JavaScriptAlertsPage(driver);
     }
+
+    public ContextMenuPage clickContextMenu(){
+        clickLink("Context Menu");
+        return new ContextMenuPage(driver);
+    }
+
+    public DynamicDataLoadingPage clickDynamicDataLoading(){
+        clickLink("Dynamic Data Loading");
+        return new DynamicDataLoadingPage(driver);
+    }
     public void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
 //        WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
