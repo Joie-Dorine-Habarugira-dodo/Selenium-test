@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import pages.HomePage;
 
 public class BaseTests {
     public WebDriver driver;
@@ -25,6 +24,4 @@ public class BaseTests {
     public void tearDown(){
         driver.quit();
     }
-
-
 }

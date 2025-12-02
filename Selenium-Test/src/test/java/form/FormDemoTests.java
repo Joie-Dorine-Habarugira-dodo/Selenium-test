@@ -7,7 +7,6 @@ import pages.HomePage;
 import pages.SuccessfulSubmissionPage;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 public class FormDemoTests extends BaseTests {
     @Test

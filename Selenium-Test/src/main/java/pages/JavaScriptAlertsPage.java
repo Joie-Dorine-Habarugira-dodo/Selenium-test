@@ -45,12 +45,4 @@ public class JavaScriptAlertsPage {
     public String getPromptText(){
         return driver.findElement(promptText).getText();
     }
-
-
-
-
-
-
-
-
 }

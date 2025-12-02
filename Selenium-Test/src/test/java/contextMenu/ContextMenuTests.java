@@ -14,6 +14,5 @@ public class ContextMenuTests extends BaseTests {
         ContextMenuPage contextMenuPage = new ContextMenuPage(driver);
         contextMenuPage.clickHotspot();
         assertEquals(contextMenuPage.getAlertText(), "You selected a context menu", "Incorrect Text");
-
     }
 }

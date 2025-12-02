@@ -1,12 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class FormDemoPage {
     private WebDriver driver;
@@ -34,9 +29,6 @@ public class FormDemoPage {
     }
     public void setEmail(){
         driver.findElement(emailField).sendKeys("joiedorine.habarugira22a@kepler.org");
-//        WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(nameField));
-
     }
     public void setPassword(){
         driver.findElement(passwordField).sendKeys("12345678");
@@ -69,6 +61,4 @@ public class FormDemoPage {
         driver.findElement(submitButton).click();
         return new SuccessfulSubmissionPage(driver);
     }
-
-
 }
