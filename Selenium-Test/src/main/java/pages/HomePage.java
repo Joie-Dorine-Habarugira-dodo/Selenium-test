@@ -19,6 +19,7 @@ public class HomePage {
         clickLink("Input Form Submit");
         return new FormDemoPage(driver);
     }
+
     public JavaScriptAlertsPage clickAlertBoxDemo(){
         clickLink("Javascript Alerts");
         return new JavaScriptAlertsPage(driver);
